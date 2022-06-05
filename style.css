@@ -9,6 +9,7 @@
 body {
   background-color: #000;
   font-family: "Poppins", sans-serif;
+  overflow: hidden;
 }
 
 .container {
@@ -26,6 +27,7 @@ body {
   border-radius: 5px;
   display: grid;
   justify-content: center;
+  align-self: center;
 }
 
 .wrapper {
@@ -50,4 +52,13 @@ span {
   font-size: 18px;
   letter-spacing: 0.5px;
   border-radius: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 300px;
+  }
+  input[type="range"] {
+    width: 150px;
+  }
 }
